@@ -1,14 +1,18 @@
 import React from 'react';
+import CartItem from '../../components/CartItem';
 import './style.css';
 
 function Cart() {
+    const productTeste = {
+        name: 'A maldição do tigre',
+        price: 60.5
+    }
     return (
         <div className='cart-container'>
             <h2>Carrinho</h2>
             <div className='cart-content'>
                 <div className='cart-itens'>
-                    <CartItem />
-                    <CartItem />
+                    <CartItem product={productTeste} />
                 </div>
                 <div className='payment-info'>
                     <span>Total: R${ }</span>
