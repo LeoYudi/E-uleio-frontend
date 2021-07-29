@@ -1,17 +1,17 @@
 .item-container{
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
     background-color: var(--light-background);
     border-radius: 0.8rem;
     box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.2);
-    padding: 0.7rem;
-    margin: 0rem 1rem;
+    padding: 0.5rem;
 }
 
 .item-container img{
-    width: 6rem;
+    width: 5rem;
     border-radius: 0.8rem;
-    justify-self: center;
+    justify-self: flex-start;
+    margin-left: 0.3rem;
 }
 
 .item-infos {
@@ -22,7 +22,7 @@
 .item-infos p, .item-infos span{
     font-size: 1.4rem;
     line-height: 2.5rem;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 
 .item-amount {

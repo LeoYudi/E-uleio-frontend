@@ -1,11 +1,23 @@
 .cart-container{
-    padding: 3rem;
+    padding: 3rem 5rem;
 }
 
 .cart-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
+}
+
+.cart-items{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .payment-info{   
@@ -19,49 +31,60 @@
     margin: 0 1rem;
 }
 
-.payment-info span, .payment-buton span {
+.payment-info span, .payment-button span {
     line-height: 3rem;
     font-size: 1.4rem;
 }
 
-.payment-buton{
+.payment-button{
     grid-column: 2;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 0rem 1rem;
+    flex-wrap: wrap;
 }
 
-.payment-buton span{
+.payment-button span{
     color: white;
     font-size: 1.2rem;
     height: 2.3rem;
     padding-right: 0.5rem;
-
     transition: all 0.4s;
 }
 
-.payment-buton span:hover {
+.payment-button span:hover {
     filter: brightness(0.3);
   }
 
-.payment-buton span:hover{
+.payment-button span:hover{
     cursor: pointer;
 }
 
-.payment-buton button {
+.payment-button button {
     background-color: var(--dark-backgorund);
     color: white;
     font-size: 1.4rem;
-    padding: 1.2rem 5rem;
+    padding: 1.2rem 4rem;
     border-radius: 0.5rem;
     border: none;
     font-weight: bold;
-
     transition: all 0.4s;
 }
 
-.payment-buton button:hover {
+.payment-button button:hover {
     background: var(--border);
     filter: brightness(0.9);
+}
+
+.cart-items::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  .cart-items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  }
+   
+  .cart-items::-webkit-scrollbar-thumb {
+    background-color: var(--text);
   }
