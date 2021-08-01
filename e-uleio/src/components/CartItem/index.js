@@ -11,7 +11,7 @@ function CartItem({ product, index }) {
 
     return (
         <div className='item-container'>
-            <img src='/assets/book.jpg' alt='book'></img>
+            <img src={product.image} alt='book'></img>
             <div className='item-infos'>
                 <p>{product.name}</p>
                 <span>R$: {(product.price * product.amount).toFixed(2)}</span>

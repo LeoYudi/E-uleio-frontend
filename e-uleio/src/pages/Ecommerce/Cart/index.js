@@ -19,7 +19,7 @@ function Cart() {
                 </div>
                 <div className='payment'>
                     <div className='payment-info'>
-                        <span>Total: R${(totalCost).toFixed(2)}</span>
+                        <span>Total: R$ {(totalCost).toFixed(2)}</span>
                         <span>Itens: {totalAmount}</span>
                     </div>
                     <div className='payment-button'>
