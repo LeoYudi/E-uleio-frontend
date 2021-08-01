@@ -24,7 +24,8 @@ export function CartContextProvider({ children }) {
             price: product.price,
             description: product.description,
             category: product.category,
-            pubisher: product.publisher
+            pubisher: product.publisher,
+            amount: 1
         }
         ])
     }
