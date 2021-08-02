@@ -1,0 +1,34 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content{
+    background-color: var(--dark-backgorund);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content h2 {
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 3rem;
+}
+
+.login-content Button{
+    width: 25rem;
+    padding: 0.5rem;
+}
+
+.login-content a {
+    text-decoration: none;
+    color: var(--light-background);
+    font-size: 1rem;
+    margin-top: 7rem;
+}
