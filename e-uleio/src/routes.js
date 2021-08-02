@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
-import { isAuthenticated } from './servies/auth';
+import { isAuthenticated } from './services/auth';
 
 import Cart from './pages/Ecommerce/Cart';
 import Home from './pages/Ecommerce/Home';

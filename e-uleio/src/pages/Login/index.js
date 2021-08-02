@@ -4,10 +4,11 @@ import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import api from '../../servies/api';
-import { login } from '../../servies/auth';
+import api from '../../services/api';
+import { login } from '../../services/auth';
 
 import './style.css';
+
 import { useHistory, withRouter } from 'react-router-dom';
 
 function Login() {
@@ -20,11 +21,12 @@ function Login() {
 
         e.preventDefault();
 
+        const response = await api.post('login', {
+            email,
+            password
+        });
+
         try {
-            const response = await api.post('login', {
-                email,
-                password
-            });
 
             if (response.status === 200) {
                 login(response.data.token);
