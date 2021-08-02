@@ -1,0 +1,23 @@
+.input-container input {
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: 2rem;
+    width: 100%;
+    line-height: 1.5rem;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.input-container input:focus {
+    outline: none;
+  }
+
+.input-container input:-webkit-autofill,
+.input-container input:-webkit-autofill:hover, 
+.input-container input:-webkit-autofill:focus, 
+.input-container input:-webkit-autofill:active {
+  box-shadow: none;
+  -webkit-box-shadow: 0 0 0 30px var(--light-background) inset !important;
+  -webkit-text-fill-color: var(--text) !important;
+  caret-color: var(--text);
+}
