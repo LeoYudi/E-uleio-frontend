@@ -26,6 +26,10 @@
     color: var(--text);
 }
 
+.menu-item:hover{
+    color: var(--text);
+}
+
 .menu-item svg{
     font-size: 1.6rem;
     margin-right: 1rem;
