@@ -1,14 +1,18 @@
 import React from 'react'
 import Routes from './routes'
 
-import './styles/global.css'
+import { UserContextProvider } from './contexts/User';
+
+import 'antd/dist/antd.css';
 
 function App() {
 
   return (
-    <div>
-      <Routes />
-    </div>
+    <UserContextProvider>
+      <div>
+        <Routes />
+      </div>
+    </ UserContextProvider>
   );
 }
 
