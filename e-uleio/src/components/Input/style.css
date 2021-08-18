@@ -1,15 +1,24 @@
 .input-container input {
     border-radius: 0.3rem;
     border: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 100%;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     padding: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.input-container label{
+  color: var(--light-background);
+  font-size: 1.3rem;
 }
 
 .input-container input:focus {
     outline: none;
+  }
+
+  .input-container input:disabled {
+    color:var(--light-background);
   }
 
 .input-container input:-webkit-autofill,

@@ -16,13 +16,18 @@
     
     color: var(--light-background);
 }
+
+.header-item h1{
+    color: var(--light-background);
+    margin: 0;
+}
+
 .header-item:last-child{
     font-size: 1.2rem;
     padding-top: 2rem;
 }
 
 .header-item img{
-    height: 100px;
-    width: 100px;
+    max-width: 7rem;
     margin-right: 0.8rem;
 }

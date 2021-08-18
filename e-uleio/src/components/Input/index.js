@@ -2,10 +2,11 @@ import React from 'react';
 
 import './style.css';
 
-function Input({ label, id, placeholder, ...rest }) {
+function Input({ label, id, ...rest }) {
     return (
         <div className="input-container">
-            <input id={id} placeholder={placeholder} {...rest} />
+            <label>{label}</label>
+            <input id={id}  {...rest} />
         </div>
     );
 }

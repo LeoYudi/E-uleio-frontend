@@ -1,9 +1,9 @@
 import React from 'react'
 import Routes from './routes'
 
-import { UserContextProvider } from './contexts/User';
-
 import 'antd/dist/antd.css';
+
+import { UserContextProvider } from './contexts/User';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <div>
         <Routes />
       </div>
-    </ UserContextProvider>
+    </UserContextProvider>
   );
 }
 

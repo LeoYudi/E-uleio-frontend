@@ -5,7 +5,7 @@ import { EcommerceRoutes } from '../../routes';
 import Navbar from '../../components/Navbar';
 import Header from '../../components/Header';
 
-//import './styles.css';
+import './style.css';
 
 function Ecommerce() {
     return (
@@ -17,7 +17,7 @@ function Ecommerce() {
                     <EcommerceRoutes />
                 </div>
             </div>
-        </CartContextProvider>
+        </CartContextProvider >
     );
 }
 
