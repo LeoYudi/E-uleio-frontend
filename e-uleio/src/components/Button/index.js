@@ -1,10 +1,10 @@
 import React from 'react'
 import './style.css'
 
-function Button({title, ...rest}){
-    
-    return(
-        <button {...rest}>{title}</button>
+function Button({ content, ...rest }) {
+
+    return (
+        <button {...rest} className='button'>{content}</button>
     )
 }
 

@@ -5,6 +5,12 @@
     justify-content: center;
 }
 
+.navbar-content{
+    border-radius: 0.3rem;
+    display: flex;
+    background-color: var(--light-background);
+}
+
 .menu-item{
     cursor: pointer;
     position: relative;
@@ -15,7 +21,11 @@
     margin-right: 2rem;
     padding: 0.6rem;
     border-radius: 0.4rem;
+    text-decoration: none;
+    color: var(--text);
+}
 
+.menu-item:hover{
     color: var(--text);
 }
 
@@ -28,10 +38,8 @@
     border-left: none;
     border-top: none;
     border-right: none;
-
     font-size: 1.3rem;
-
-    background-color: var(--background)
+    background-color: var(--light-background)
 }
 
 .menu-item input:focus{
