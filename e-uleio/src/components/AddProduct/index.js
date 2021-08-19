@@ -99,7 +99,6 @@ function AddProduct() {
               type="text"
               value={total_pages}
               onChange={e => setTotalPages(e.target.value)}
-              required
             />
             
             <div className="double-column">
@@ -107,8 +106,8 @@ function AddProduct() {
                 <label htmlFor="category">Categoria</label>
                 <select
                   id="category"
-                  onChange={e => setId_Category(e.target.value)}
                   value={id_category}
+                  onChange={e => setId_Category(e.target.value)}
                   required
                 >
                   <option value={1}>Literatura</option>
@@ -121,8 +120,8 @@ function AddProduct() {
                 <label htmlFor="publisher">Editora</label>
                 <select
                   id="publisher"
-                  onChange={e => setId_Publisher(e.target.value)}
                   value={id_publisher}
+                  onChange={e => setId_Publisher(e.target.value)}
                   required
                 >
                   <option value={1}>Companhia das Letras</option>
