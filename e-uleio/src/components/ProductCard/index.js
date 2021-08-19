@@ -30,10 +30,10 @@ function ProductCard({ product }) {
       <div className="product-actions">
         <ProductModal product={product} isAdded={isInCart} />
         {isInCart ? (
-          <Link to="/cart">Ver carrinho</Link>
+          <Link to="/cart">Carrinho</Link>
         ) : (
           <Button
-            title="Adicionar"
+            content="Adicionar"
             type="button"
             onClick={() => addItem(product)} />
         )}
