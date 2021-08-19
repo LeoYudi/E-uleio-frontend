@@ -50,30 +50,16 @@
 }
 
 .product-text-info button {
-  width: fit-content;
-  background: none;
-  border: 1px solid var(--text);
-  border-radius: 0.2rem;
-  padding: 0.2rem 0.4rem;
-
-  transition: all 0.2s;
+  padding: 0.5rem 3rem;
+  margin-top: 0.5rem;
 }
 
-.product-text-info button:hover {
-  background: var(--text);
-  color: var(--dark-backgorund);
-  filter: brightness(0.8);
-}
 
 .product-text-info a {
   width: fit-content;
-  background: var(--text);
-  border: 1px solid var(--text);
-  color: var(--dark-backgorund);
-  border-radius: 0.2rem;
-  padding: 0.2rem 0.4rem;
-  transition: all 0.2s;
-  line-height: normal;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--light-background);
 }
 
 .product-text-info a:hover {
@@ -83,4 +69,5 @@
 
 .product-description h2 {
   color: var(--text);
+  font-size: 1.5rem;
 }

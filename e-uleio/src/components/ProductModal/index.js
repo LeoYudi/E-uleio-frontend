@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Modal } from 'antd';
 import { useCart } from '../../contexts/Cart';
+
 import Button from '../Button';
 import './style.css';
 
@@ -34,7 +35,7 @@ function ProductModal({ product, isAdded }) {
                 <Link to="/cart">Ver carrinho</Link>
               ) : (
                 <Button
-                  title="Adicionar"
+                  content="Adicionar"
                   type="button"
                   onClick={() => addItem(product)}
                 />
