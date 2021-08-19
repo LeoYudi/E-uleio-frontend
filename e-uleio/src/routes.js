@@ -9,6 +9,10 @@ import Ecommerce from './pages/Ecommerce';
 import Login from './pages/Login';
 import Profile from './pages/Ecommerce/Profile';
 import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
+import Products from './pages/Dashboard/Products';
+import Details from './pages/Dashboard/Details';
+import Clients from './pages/Dashboard/Clients';
 
 export const EcommerceRoutes = () => {
     return (
@@ -33,12 +37,23 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
     />
 );
 
+export const DashboardRoutes = () => {
+    return (
+      <Switch>
+        <PrivateRoute exact path="/dashboard/products" component={Products} />
+        <PrivateRoute exact path="/dashboard/products/:productId" component={Details} />
+        <PrivateRoute exact path="/dashboard/clients" component={Clients} />
+      </Switch>
+    )
+  }
+
 function Routes() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />
+                <Route path="/dashboard" component={Dashboard} />
                 <Route path="/" component={Ecommerce} />
             </Switch>
         </BrowserRouter>
