@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
+import { FiEdit, FiLogOut, FiTrash, FiXSquare, FiClipboard } from 'react-icons/fi';
 
 import Button from '../../../components/Button';
 import Input from '../../../components/Input';
@@ -8,10 +9,10 @@ import { message } from 'antd';
 
 import { logout } from '../../../services/auth';
 import api from '../../../services/api';
+
 import { useUser } from '../../../contexts/User';
 
 import './style.css';
-import { FiEdit, FiLogOut, FiTrash, FiXSquare } from 'react-icons/fi';
 
 function Profile() {
     const { user, removeUser, setUser } = useUser();
@@ -120,7 +121,7 @@ function Profile() {
                     <Button
                         content={
                             <div className="button-icon">
-                                <FiLogOut></FiLogOut>
+                                <FiLogOut />
                                 <p>Sair</p>
                             </div>
                         }
@@ -129,24 +130,29 @@ function Profile() {
                         content={isEnabled ?
                             (
                                 <div className="button-icon">
-                                    <FiXSquare></FiXSquare>
+                                    <FiXSquare />
                                     <p>Cancelar</p>
                                 </div>
                             ) : (
                                 <div className="button-icon">
-                                    <FiEdit></FiEdit>
+                                    <FiEdit />
                                     <p>Editar</p>
                                 </div>
                             )}
                         onClick={() => resetForm()}
                     />
-                    <Button content={
+                    <Button content={user.is_admin === 1 ? (
+                        <NavLink to="dashboard" className="button-icon">
+                            <FiClipboard />
+                            <p>Dashboard</p>
+                        </NavLink>
+                    ) : (
                         <div className="button-icon">
-                            <FiTrash></FiTrash>
+                            <FiTrash />
                             <p>Deletar conta</p>
                         </div>
-                    }
-                        onClick={deleteUser} disabled={user.is_admin} />
+                    )}
+                        onClick={deleteUser} disabled={user.is_admin === 1} />
                 </div>
                 <form className='update-form' onSubmit={handleUpdate}>
                     <Input

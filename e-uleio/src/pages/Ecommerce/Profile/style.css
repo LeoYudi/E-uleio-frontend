@@ -47,6 +47,10 @@
     gap: 0.3rem;
 }
 
+.buttons-top a {
+    color: var(--light-background);
+}
+
 .button-icon{
     display: flex;
     justify-content: center;

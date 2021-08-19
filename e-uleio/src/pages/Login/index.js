@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory, withRouter, NavLink } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
 
 import { message } from 'antd';
 
-import { FiArrowLeft } from 'react-icons/fi';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -42,7 +42,12 @@ function Login() {
                 message.destroy("logging");
                 login(response.data.token);
                 setUser(response.data.user);
-                history.push('/profile');
+
+                if (response.data.user.is_admin === 1) {
+                    history.push("/dashboard");
+                } else {
+                    history.push("/profile");
+                }
             }
 
         } catch (error) {
