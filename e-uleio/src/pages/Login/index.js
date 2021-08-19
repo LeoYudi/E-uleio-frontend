@@ -56,7 +56,7 @@ function Login() {
     return (
         <div className='login-container'>
             <header>
-                <a href="/"><FiArrowLeft color="white" size="2.5rem" /></a>
+                <a href="/"><FiArrowLeft color="white" size="2rem" /></a>
                 <img src="/assets/books-icon.png" alt="Logo"></img>
             </header>
             <div className='login-content'>

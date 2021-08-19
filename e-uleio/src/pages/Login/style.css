@@ -51,3 +51,7 @@
     font-size: 1rem;
     margin-top: 6rem;
 }
+
+.login-content a:hover {
+    color: var(--light-background);
+}
